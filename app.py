@@ -19,19 +19,19 @@ with col1:
 # 3. 데이터시각화
 with col2:
       st.subheader('데이터시각화1')
-      st.image('/content/시각화1.png' )   
+      st.image('시각화1.png' )   
 with col3:
       st.subheader('데이터시각화2')
-      st.image('/content/시각화2.png')  
+      st.image('시각화2.png')  
 with col4:
       st.subheader('데이터시각화3')
-      st.image('/content/시각화3.png')
+      st.image('시각화3.png')
 with col5:
       st.subheader('데이터시각화4')
-      st.image('/content/시각화4.png')
+      st.image('시각화4.png')
 with col6:
       st.subheader('데이터시각화5')
-      st.image('/content/시각화5.png')
+      st.image('시각화5.png')
 
 # 4. 모델 활용
 st.subheader('모델 활용')
