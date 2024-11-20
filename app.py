@@ -47,5 +47,5 @@ if st.button('여부 확인'):
         p = model.predict(input_data)   
         if p[0] == 1 :
               st.success('인공지능 분류 결과는 "심장마비 가능성이 있다"입니다')
-        else P[0] == 0 :
+        else :
               st.success('인공지능 분류 결과는 "심장마비 가능성이 적다"입니다')
