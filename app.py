@@ -7,7 +7,7 @@ import joblib
 model = joblib.load('logistic_regression_model.pkl') 
 # 2. 모델 설명
 st.title('심장마비 여부 분류 모델')
-col1, col2,col3 = st.columns(  )   
+col1, col2, col3, col4, col5, col6 = st.columns(6)   
 with col1:
       st.subheader('모델 설명 ')
       st.write(' - 기계학습 알고리즘 : 로지스틱 회귀 ')
@@ -34,7 +34,7 @@ with col6:
       st.image('/content/시각화5.png')
 
 # 4. 모델 활용
-subheader('모델 활용')
+st.subheader('모델 활용')
 st.write('**** 나이,심박수,CK-MB,트로포닌을 입력해주세요... 인공지능이 당신의 심장마비 여부를 알려드립니다!')
 
 a = st.number_input(' 나이를 입력하세요. ', value=0)
