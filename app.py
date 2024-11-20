@@ -6,7 +6,7 @@ import streamlit as st
 import joblib
 model = joblib.load('logistic_regression_model.pkl') 
 # 2. 모델 설명
-title('심장마비 여부 분류 모델')
+st.title('심장마비 여부 분류 모델')
 col1, col2,col3 = st.columns(  )   
 with col1:
       st.subheader('모델 설명 ')
