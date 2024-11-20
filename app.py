@@ -4,7 +4,7 @@ import streamlit as st
 
 # 1. 기계학습 모델 파일 로드
 import joblib
-model = joblib.load('/content/Medicaldataset_______.xlsx') 
+model = joblib.load('logistic_regression_model.pkl') 
 # 2. 모델 설명
 title('심장마비 여부 분류 모델')
 col1, col2,col3 = st.columns(  )   
