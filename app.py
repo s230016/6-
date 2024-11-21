@@ -7,7 +7,7 @@ import joblib
 model = joblib.load('logistic_regression_model.pkl') 
 # 2. 모델 설명
 st.title('심장마비 여부 분류 모델')
-col1, col2, col3, col4, col5, col6 = st.columns(6)   
+col1, col2, col3 = st.columns(3)   
 with col1:
       st.subheader('모델 설명 ')
       st.write(' - 기계학습 알고리즘 : 로지스틱 회귀 ')
@@ -15,21 +15,20 @@ with col1:
       st.write(' - 훈련    데이터 : 923건')
       st.write(' - 테스트 데이터 : 396건')
       st.write(' - 모델 정확도 : 0.79') 
-
-# 3. 데이터시각화
 with col2:
       st.subheader('데이터시각화1')
       st.image('시각화1.png' )   
 with col3:
       st.subheader('데이터시각화2')
       st.image('시각화2.png')  
-with col4:
+col1, col2, col3 = st.columns(3)
+with col1:
       st.subheader('데이터시각화3')
       st.image('시각화3.png')
-with col5:
+with col2:
       st.subheader('데이터시각화4')
       st.image('시각화4.png')
-with col6:
+with col3:
       st.subheader('데이터시각화5')
       st.image('시각화5.png')
 
